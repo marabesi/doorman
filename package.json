@@ -1,0 +1,15 @@
+{
+  "name": "doorman",
+  "private": true,
+  "scripts": {
+    "start": "meteor run --settings settings.json"
+  },
+  "dependencies": {
+    "babel-runtime": "^6.26.0",
+    "bufferutil": "^3.0.3",
+    "cordova": "^8.0.0",
+    "meteor-node-stubs": "^0.3.2",
+    "mqtt": "^2.15.1",
+    "utf-8-validate": "^4.0.0"
+  }
+}

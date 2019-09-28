@@ -1,0 +1,162 @@
+h3 {
+    font-size: 1.2rem;
+}
+
+.title {
+    font-size: 18px;
+    position: absolute;
+    top: 31px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    width: 182px;
+}
+
+.logout {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    width: 70px;
+    height: 70px;
+}
+
+.locked {
+    margin: 0 auto 15px auto;
+    color: #fff;
+    width: 100px;
+    height: 100px;
+}
+
+.locked svg, .logout svg {
+    fill: #fff;
+}
+
+
+$stroke: #012847;
+$background: #012847;
+$success: #56A0C0;
+$error: #FE983E;
+$white: #fff;
+
+body {
+  background-color: $background;
+  color: $stroke;
+  font-family: 'Roboto', sans-serif;
+}
+
+.hide {
+  display: none;
+}
+
+.info {
+  position: absolute;
+  text-align: center;
+  width: 230px;
+  color: $white;
+  left: 50%;
+  transform: translate(-50%);
+  
+  p {
+    font-size: 12px;
+  }
+  
+  .success {
+    color: $success;
+  }
+  
+  .error {
+    color: $error;
+    animation: hide 3s linear forwards;
+  }
+}
+
+svg {
+  user-select: none;
+  display: block;
+  margin: 0 auto;
+  
+  circle#svg_1 {
+    fill: $white;
+    stroke-width: 10px;
+    stroke: $stroke;
+  }
+  
+  circle#svg_16 {
+    fill: $white;
+    stroke-width: 20px;
+    stroke: $white;
+  }
+  
+  circle#svg_20 {
+    fill: $background;
+    stroke: $background;
+  }
+}
+
+.cancel {
+  animation: cancel 1s linear;
+}
+
+#locked-container svg path {
+  stroke: $stroke;
+  fill: $stroke;
+}
+
+.free {
+  animation: svg 1s linear forwards;
+}
+
+.unlock {
+  animation: unlockanimation 0.5s forwards;
+}
+
+svg path {
+  opacity: 1;
+}
+
+@keyframes svg {
+  0% {
+    stroke-width: 20px;
+    stroke-dashoffset: 597;
+    stroke: $success;
+  }
+  100% {
+    stroke-width: 20px;
+    stroke-dashoffset: 0;
+    stroke: $success;
+  }
+}
+
+@keyframes unlockanimation {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes cancel {
+  0% {
+    stroke: $stroke;
+  }
+  50% {
+    stroke-width: 10px;
+    stroke: $error;
+  }
+  100% {
+    stroke-width: 2px;
+    stroke: $stroke;
+  }
+}
+
+@keyframes hide {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}

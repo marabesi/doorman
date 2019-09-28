@@ -1,0 +1,12 @@
+{
+    "mqtt": {
+        "host": "",
+        "user": "",
+        "password": "",
+        "port": ""
+    },
+    "google": {
+        "clientId": "",
+        "clientSecret": ""
+    }
+}

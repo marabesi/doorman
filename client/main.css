@@ -1,0 +1,47 @@
+@font-face {
+  font-family:'SF Pro Display 100';
+  src:url("http://www.apple.com/wss/fonts/SF-Pro-Display/v1/sf-pro-display_ultralight.eot");
+}
+
+button:focus {
+  outline: none;
+}
+
+body {
+    color: #fff;
+}
+
+.vertical-align {
+    min-height: 100%;
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+}
+
+.space-background {
+    background: url('./assets/background.png');
+}
+
+.form-control {
+    background-color: transparent;
+    color: #fff;
+}
+
+.form-group img {
+    border: none;
+    margin-bottom: 96px;
+}
+
+.login-with-google {
+    background: url('./assets/login-btn.png') no-repeat;
+    background-size: 100%;
+    width: 70%;
+    height: 185px;
+    outline: 0;
+    border: none;
+    margin: 0 auto;
+    display: block;
+    outline: 0;
+}
+
